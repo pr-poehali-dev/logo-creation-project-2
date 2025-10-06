@@ -52,8 +52,8 @@ const Index = () => {
                   alt="Сантехник"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full shadow-lg">
-                  <div className="text-2xl font-montserrat font-black text-[#1A1F2C] tracking-tight">
+                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-lg">
+                  <div className="text-sm font-montserrat font-black text-[#1A1F2C] tracking-tight">
                     Д И
                   </div>
                 </div>
@@ -136,8 +136,8 @@ const Index = () => {
                   alt="Сантехник"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2.5 py-0.5 rounded-full">
-                  <div className="text-base font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2 py-0.5 rounded-full">
+                  <div className="text-xs font-montserrat font-black text-[#1A1F2C]">Д И</div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
@@ -161,8 +161,8 @@ const Index = () => {
                   alt="Сантехник"
                   className="w-full h-full object-cover grayscale"
                 />
-                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2.5 py-0.5 rounded-full">
-                  <div className="text-base font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2 py-0.5 rounded-full">
+                  <div className="text-xs font-montserrat font-black text-[#1A1F2C]">Д И</div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
@@ -186,8 +186,8 @@ const Index = () => {
                   alt="Сантехник"
                   className="w-full h-full object-cover opacity-80"
                 />
-                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white px-2.5 py-0.5 rounded-full shadow-md">
-                  <div className="text-base font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white px-2 py-0.5 rounded-full shadow-md">
+                  <div className="text-xs font-montserrat font-black text-[#1A1F2C]">Д И</div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
