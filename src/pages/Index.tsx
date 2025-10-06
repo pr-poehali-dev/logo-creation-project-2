@@ -47,24 +47,24 @@ const Index = () => {
               <div 
                 className={`w-[400px] h-[400px] rounded-full ${currentVariant.bg} flex items-center justify-center border-8 ${currentVariant.border} shadow-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden relative`}
               >
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[220px] h-[220px] flex flex-col gap-2">
-                  <div className="flex gap-2 justify-center">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[160px] h-[160px] flex flex-col gap-1.5">
+                  <div className="flex gap-1.5 justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 1"
-                      className="w-[100px] h-[100px] object-cover rounded-lg border-2 border-white shadow-lg"
+                      className="w-[75px] h-[75px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
                     <img 
                       src="https://cdn.poehali.dev/files/6b78e9d9-4375-455a-868f-d9741ea8af31.png"
                       alt="Фото 2"
-                      className="w-[100px] h-[100px] object-cover rounded-lg border-2 border-white shadow-lg"
+                      className="w-[75px] h-[75px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
                   </div>
                   <div className="flex justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 3"
-                      className="w-[100px] h-[100px] object-cover rounded-lg border-2 border-white shadow-lg"
+                      className="w-[75px] h-[75px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
                   </div>
                 </div>
@@ -142,24 +142,24 @@ const Index = () => {
           <Card className="p-8 bg-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             <div className="relative">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[110px] h-[110px] flex flex-col gap-1">
-                  <div className="flex gap-1 justify-center">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80px] h-[80px] flex flex-col gap-0.5">
+                  <div className="flex gap-0.5 justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 1"
-                      className="w-[50px] h-[50px] object-cover rounded border border-white shadow-md"
+                      className="w-[37px] h-[37px] object-cover rounded border border-white shadow-md"
                     />
                     <img 
                       src="https://cdn.poehali.dev/files/6b78e9d9-4375-455a-868f-d9741ea8af31.png"
                       alt="Фото 2"
-                      className="w-[50px] h-[50px] object-cover rounded border border-white shadow-md"
+                      className="w-[37px] h-[37px] object-cover rounded border border-white shadow-md"
                     />
                   </div>
                   <div className="flex justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 3"
-                      className="w-[50px] h-[50px] object-cover rounded border border-white shadow-md"
+                      className="w-[37px] h-[37px] object-cover rounded border border-white shadow-md"
                     />
                   </div>
                 </div>
