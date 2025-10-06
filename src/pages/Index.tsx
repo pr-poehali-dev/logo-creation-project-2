@@ -52,8 +52,8 @@ const Index = () => {
                   alt="Сантехник"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-white/90 backdrop-blur-sm px-6 py-2 rounded-full shadow-lg">
-                  <div className="text-4xl font-montserrat font-black text-[#1A1F2C] tracking-tight">
+                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full shadow-lg">
+                  <div className="text-2xl font-montserrat font-black text-[#1A1F2C] tracking-tight">
                     Д И
                   </div>
                 </div>
@@ -66,7 +66,7 @@ const Index = () => {
                     d="M 200, 200 m -180, 0 a 180,180 0 1,1 360,0 a 180,180 0 1,1 -360,0"
                   />
                 </defs>
-                <text className="fill-white font-rubik font-bold text-[20px] tracking-[0.3em] drop-shadow-lg">
+                <text className="fill-white font-rubik font-black text-[24px] tracking-[0.4em]" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.6)'}}>
                   <textPath href="#circlePath" startOffset="25%">
                     СЛЕСАРЬ · САНТЕХНИК
                   </textPath>
@@ -136,15 +136,15 @@ const Index = () => {
                   alt="Сантехник"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white/90 px-3 py-1 rounded-full">
-                  <div className="text-xl font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2.5 py-0.5 rounded-full">
+                  <div className="text-base font-montserrat font-black text-[#1A1F2C]">Д И</div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
                 <defs>
                   <path id="circle1" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
                 </defs>
-                <text className="fill-white font-rubik font-bold text-[10px] tracking-[0.2em] drop-shadow-lg">
+                <text className="fill-white font-rubik font-black text-[12px] tracking-[0.25em]" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.6)'}}>
                   <textPath href="#circle1" startOffset="25%">
                     СЛЕСАРЬ · САНТЕХНИК
                   </textPath>
@@ -161,15 +161,15 @@ const Index = () => {
                   alt="Сантехник"
                   className="w-full h-full object-cover grayscale"
                 />
-                <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white/90 px-3 py-1 rounded-full">
-                  <div className="text-xl font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2.5 py-0.5 rounded-full">
+                  <div className="text-base font-montserrat font-black text-[#1A1F2C]">Д И</div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
                 <defs>
                   <path id="circle2" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
                 </defs>
-                <text className="fill-white font-rubik font-bold text-[10px] tracking-[0.2em] drop-shadow-lg">
+                <text className="fill-white font-rubik font-black text-[12px] tracking-[0.25em]" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.6)'}}>
                   <textPath href="#circle2" startOffset="25%">
                     СЛЕСАРЬ · САНТЕХНИК
                   </textPath>
@@ -186,15 +186,15 @@ const Index = () => {
                   alt="Сантехник"
                   className="w-full h-full object-cover opacity-80"
                 />
-                <div className="absolute bottom-3 left-1/2 transform -translate-x-1/2 bg-white px-3 py-1 rounded-full shadow-md">
-                  <div className="text-xl font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute top-2 left-1/2 transform -translate-x-1/2 bg-white px-2.5 py-0.5 rounded-full shadow-md">
+                  <div className="text-base font-montserrat font-black text-[#1A1F2C]">Д И</div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
                 <defs>
                   <path id="circle3" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
                 </defs>
-                <text className="fill-[#1A1F2C] font-rubik font-bold text-[10px] tracking-[0.2em]">
+                <text className="fill-[#1A1F2C] font-rubik font-black text-[12px] tracking-[0.25em]" style={{textShadow: '0 0 3px white, 0 0 5px white'}}>
                   <textPath href="#circle3" startOffset="25%">
                     СЛЕСАРЬ · САНТЕХНИК
                   </textPath>
