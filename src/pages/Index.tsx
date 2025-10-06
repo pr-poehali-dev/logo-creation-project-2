@@ -47,28 +47,24 @@ const Index = () => {
               <div 
                 className={`w-[400px] h-[400px] rounded-full ${currentVariant.bg} flex items-center justify-center border-8 ${currentVariant.border} shadow-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden relative`}
               >
-                <div className="absolute inset-0 grid grid-cols-3">
-                  <div className="relative overflow-hidden">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] flex flex-col gap-3">
+                  <div className="flex gap-3 justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 1"
-                      className="absolute inset-0 w-full h-full object-cover"
-                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                      className="w-[130px] h-[130px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
-                  </div>
-                  <div className="relative overflow-hidden">
                     <img 
                       src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
                       alt="Фото 2"
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="w-[130px] h-[130px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
                   </div>
-                  <div className="relative overflow-hidden">
+                  <div className="flex justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 3"
-                      className="absolute inset-0 w-full h-full object-cover"
-                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                      className="w-[130px] h-[130px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
                   </div>
                 </div>
@@ -145,29 +141,25 @@ const Index = () => {
         <div className="grid md:grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Card className="p-8 bg-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative">
-                <div className="absolute inset-0 grid grid-cols-3">
-                  <div className="relative overflow-hidden">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140px] h-[140px] flex flex-col gap-1.5">
+                  <div className="flex gap-1.5 justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 1"
-                      className="absolute inset-0 w-full h-full object-cover"
-                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                      className="w-[65px] h-[65px] object-cover rounded border border-white shadow-md"
                     />
-                  </div>
-                  <div className="relative overflow-hidden">
                     <img 
                       src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
                       alt="Фото 2"
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="w-[65px] h-[65px] object-cover rounded border border-white shadow-md"
                     />
                   </div>
-                  <div className="relative overflow-hidden">
+                  <div className="flex justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 3"
-                      className="absolute inset-0 w-full h-full object-cover"
-                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                      className="w-[65px] h-[65px] object-cover rounded border border-white shadow-md"
                     />
                   </div>
                 </div>
@@ -187,29 +179,25 @@ const Index = () => {
 
           <Card className="p-8 bg-gray-900 shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative">
-                <div className="absolute inset-0 grid grid-cols-3">
-                  <div className="relative overflow-hidden">
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative bg-gradient-to-br from-gray-800 to-gray-950">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140px] h-[140px] flex flex-col gap-1.5">
+                  <div className="flex gap-1.5 justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 1"
-                      className="absolute inset-0 w-full h-full object-cover grayscale"
-                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                      className="w-[65px] h-[65px] object-cover rounded border border-white shadow-md grayscale"
                     />
-                  </div>
-                  <div className="relative overflow-hidden">
                     <img 
                       src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
                       alt="Фото 2"
-                      className="absolute inset-0 w-full h-full object-cover grayscale"
+                      className="w-[65px] h-[65px] object-cover rounded border border-white shadow-md grayscale"
                     />
                   </div>
-                  <div className="relative overflow-hidden">
+                  <div className="flex justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 3"
-                      className="absolute inset-0 w-full h-full object-cover grayscale"
-                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                      className="w-[65px] h-[65px] object-cover rounded border border-white shadow-md grayscale"
                     />
                   </div>
                 </div>
@@ -230,28 +218,24 @@ const Index = () => {
           <Card className="p-8 bg-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             <div className="relative">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500 shadow-lg relative bg-white">
-                <div className="absolute inset-0 grid grid-cols-3">
-                  <div className="relative overflow-hidden">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[140px] h-[140px] flex flex-col gap-1.5">
+                  <div className="flex gap-1.5 justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 1"
-                      className="absolute inset-0 w-full h-full object-cover opacity-90"
-                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                      className="w-[65px] h-[65px] object-cover rounded border border-gray-200 shadow-md"
                     />
-                  </div>
-                  <div className="relative overflow-hidden">
                     <img 
                       src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
                       alt="Фото 2"
-                      className="absolute inset-0 w-full h-full object-cover opacity-90"
+                      className="w-[65px] h-[65px] object-cover rounded border border-gray-200 shadow-md"
                     />
                   </div>
-                  <div className="relative overflow-hidden">
+                  <div className="flex justify-center">
                     <img 
                       src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
                       alt="Фото 3"
-                      className="absolute inset-0 w-full h-full object-cover opacity-90"
-                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                      className="w-[65px] h-[65px] object-cover rounded border border-gray-200 shadow-md"
                     />
                   </div>
                 </div>
