@@ -55,7 +55,7 @@ const Index = () => {
                       className="w-[100px] h-[100px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
                     <img 
-                      src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
+                      src="https://cdn.poehali.dev/files/6b78e9d9-4375-455a-868f-d9741ea8af31.png"
                       alt="Фото 2"
                       className="w-[100px] h-[100px] object-cover rounded-lg border-2 border-white shadow-lg"
                     />
@@ -150,7 +150,7 @@ const Index = () => {
                       className="w-[50px] h-[50px] object-cover rounded border border-white shadow-md"
                     />
                     <img 
-                      src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
+                      src="https://cdn.poehali.dev/files/6b78e9d9-4375-455a-868f-d9741ea8af31.png"
                       alt="Фото 2"
                       className="w-[50px] h-[50px] object-cover rounded border border-white shadow-md"
                     />
