@@ -4,23 +4,26 @@ import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
-  const [activeVariant, setActiveVariant] = useState<'color' | 'mono' | 'dark'>('color');
+  const [activeVariant, setActiveVariant] = useState<'color' | 'mono' | 'white'>('color');
 
   const logoVariants = {
     color: {
-      gradient: 'bg-gradient-to-br from-[#FF6B35] via-[#F97316] to-[#004E89]',
+      bg: 'bg-gradient-to-br from-[#FF6B35] via-[#F97316] to-[#004E89]',
       text: 'text-white',
+      border: 'border-white',
       title: 'Цветной'
     },
     mono: {
-      gradient: 'bg-gradient-to-br from-gray-800 to-gray-950',
+      bg: 'bg-gradient-to-br from-gray-800 to-gray-950',
       text: 'text-white',
+      border: 'border-white',
       title: 'Монохром'
     },
-    dark: {
-      gradient: 'bg-gradient-to-br from-[#1A1F2C] to-[#0f1117]',
-      text: 'text-white',
-      title: 'Темный'
+    white: {
+      bg: 'bg-white',
+      text: 'text-[#1A1F2C]',
+      border: 'border-[#FF6B35]',
+      title: 'Белый фон'
     }
   };
 
@@ -31,28 +34,40 @@ const Index = () => {
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-montserrat font-black text-accent mb-4">
-            Персональный Логотип
+            Логотип
           </h1>
           <p className="text-xl font-rubik text-muted-foreground">
-            Современный стиль · Слесарь Сантехник
+            Слесарь Сантехник · Инициалы Д И
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          <Card className="p-12 bg-white shadow-2xl overflow-hidden relative group animate-scale-in">
-            <div 
-              className={`absolute inset-0 ${currentVariant.gradient} animate-gradient-shift transition-all duration-700`}
-              style={{ backgroundSize: '200% 200%' }}
-            />
-            <div className="relative z-10 flex items-center justify-center min-h-[400px]">
-              <div className={`${currentVariant.text} transition-all duration-500 group-hover:scale-110`}>
-                <div className="text-[120px] md:text-[180px] leading-none font-montserrat font-black tracking-tighter">
-                  Д И
-                </div>
-                <div className="text-center mt-6 text-lg md:text-xl font-rubik font-medium tracking-widest opacity-90">
-                  СЛЕСАРЬ САНТЕХНИК
+          <Card className="p-12 bg-white shadow-2xl overflow-hidden animate-scale-in flex items-center justify-center">
+            <div className="relative group">
+              <div 
+                className={`w-[400px] h-[400px] rounded-full ${currentVariant.bg} flex items-center justify-center border-8 ${currentVariant.border} shadow-2xl transition-all duration-500 group-hover:scale-105 animate-gradient-shift`}
+                style={{ backgroundSize: '200% 200%' }}
+              >
+                <div className={`${currentVariant.text} text-center transition-all duration-500`}>
+                  <div className="text-[140px] leading-none font-montserrat font-black tracking-tight">
+                    ДИ
+                  </div>
                 </div>
               </div>
+              
+              <svg className="absolute inset-0 w-[400px] h-[400px] pointer-events-none" viewBox="0 0 400 400">
+                <defs>
+                  <path
+                    id="circlePath"
+                    d="M 200, 200 m -180, 0 a 180,180 0 1,1 360,0 a 180,180 0 1,1 -360,0"
+                  />
+                </defs>
+                <text className={`${currentVariant.text} fill-current font-rubik font-bold text-[18px] tracking-[0.3em]`}>
+                  <textPath href="#circlePath" startOffset="25%">
+                    СЛЕСАРЬ · САНТЕХНИК
+                  </textPath>
+                </text>
+              </svg>
             </div>
           </Card>
 
@@ -101,47 +116,73 @@ const Index = () => {
                 </div>
               </div>
             </Card>
-
-            <Card className="p-8 bg-white shadow-lg">
-              <h3 className="text-xl font-montserrat font-bold mb-4 text-accent flex items-center gap-2">
-                <Icon name="Type" size={24} />
-                Типографика
-              </h3>
-              <div className="space-y-3">
-                <div>
-                  <p className="text-sm text-muted-foreground mb-1">Инициалы:</p>
-                  <p className="text-2xl font-montserrat font-black">Montserrat Black</p>
-                </div>
-                <div>
-                  <p className="text-sm text-muted-foreground mb-1">Подпись:</p>
-                  <p className="text-xl font-rubik font-medium">Rubik Medium</p>
-                </div>
-              </div>
-            </Card>
           </div>
         </div>
 
+        <div className="text-center mb-6">
+          <h3 className="text-2xl font-montserrat font-bold text-accent mb-6">Примеры использования</h3>
+        </div>
+
         <div className="grid md:grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          <Card className="p-8 bg-gradient-to-br from-[#FF6B35] to-[#F97316] text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
-            <div className="text-6xl font-montserrat font-black mb-3">Д И</div>
-            <p className="text-sm font-rubik tracking-widest opacity-90">СЛЕСАРЬ САНТЕХНИК</p>
+          <Card className="p-8 bg-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
+            <div className="relative">
+              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-[#FF6B35] via-[#F97316] to-[#004E89] flex items-center justify-center border-4 border-white shadow-lg">
+                <div className="text-white text-6xl font-montserrat font-black">ДИ</div>
+              </div>
+              <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
+                <defs>
+                  <path id="circle1" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
+                </defs>
+                <text className="fill-white font-rubik font-bold text-[9px] tracking-[0.2em]">
+                  <textPath href="#circle1" startOffset="25%">
+                    СЛЕСАРЬ · САНТЕХНИК
+                  </textPath>
+                </text>
+              </svg>
+            </div>
           </Card>
 
-          <Card className="p-8 bg-gradient-to-br from-gray-800 to-gray-950 text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
-            <div className="text-6xl font-montserrat font-black mb-3">Д И</div>
-            <p className="text-sm font-rubik tracking-widest opacity-90">СЛЕСАРЬ САНТЕХНИК</p>
+          <Card className="p-8 bg-gray-900 shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
+            <div className="relative">
+              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center border-4 border-white shadow-lg">
+                <div className="text-white text-6xl font-montserrat font-black">ДИ</div>
+              </div>
+              <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
+                <defs>
+                  <path id="circle2" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
+                </defs>
+                <text className="fill-white font-rubik font-bold text-[9px] tracking-[0.2em]">
+                  <textPath href="#circle2" startOffset="25%">
+                    СЛЕСАРЬ · САНТЕХНИК
+                  </textPath>
+                </text>
+              </svg>
+            </div>
           </Card>
 
-          <Card className="p-8 bg-gradient-to-br from-[#004E89] to-[#0EA5E9] text-white shadow-xl hover:shadow-2xl transition-all hover:scale-105">
-            <div className="text-6xl font-montserrat font-black mb-3">Д И</div>
-            <p className="text-sm font-rubik tracking-widest opacity-90">СЛЕСАРЬ САНТЕХНИК</p>
+          <Card className="p-8 bg-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
+            <div className="relative">
+              <div className="w-48 h-48 rounded-full bg-white flex items-center justify-center border-4 border-[#FF6B35] shadow-lg">
+                <div className="text-[#1A1F2C] text-6xl font-montserrat font-black">ДИ</div>
+              </div>
+              <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
+                <defs>
+                  <path id="circle3" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
+                </defs>
+                <text className="fill-[#1A1F2C] font-rubik font-bold text-[9px] tracking-[0.2em]">
+                  <textPath href="#circle3" startOffset="25%">
+                    СЛЕСАРЬ · САНТЕХНИК
+                  </textPath>
+                </text>
+              </svg>
+            </div>
           </Card>
         </div>
 
         <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg">
             <Icon name="Wrench" size={20} className="text-primary" />
-            <span className="font-rubik font-medium text-accent">Ваш персональный бренд готов</span>
+            <span className="font-rubik font-medium text-accent">Круглый логотип готов</span>
             <Icon name="Droplets" size={20} className="text-secondary" />
           </div>
         </div>
