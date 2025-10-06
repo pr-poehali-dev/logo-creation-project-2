@@ -8,7 +8,7 @@ const Index = () => {
 
   const logoVariants = {
     color: {
-      bg: 'bg-gradient-to-br from-[#FF6B35] via-[#F97316] to-[#004E89]',
+      bg: 'bg-gradient-to-br from-yellow-400 via-orange-500 to-red-500',
       text: 'text-white',
       border: 'border-white',
       title: 'Цветной'
@@ -21,8 +21,8 @@ const Index = () => {
     },
     white: {
       bg: 'bg-white',
-      text: 'text-[#1A1F2C]',
-      border: 'border-[#FF6B35]',
+      text: 'text-black',
+      border: 'border-yellow-500',
       title: 'Белый фон'
     }
   };
@@ -33,11 +33,11 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="container mx-auto px-4 py-12 max-w-6xl">
         <div className="text-center mb-12 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-montserrat font-black text-accent mb-4">
-            Логотип
+          <h1 className="text-5xl md:text-7xl font-montserrat font-black text-yellow-500 mb-4">
+            Логотип Такси
           </h1>
           <p className="text-xl font-rubik text-muted-foreground">
-            Слесарь Сантехник · Инициалы Д И
+            Таксуем В АБК
           </p>
         </div>
 
@@ -47,14 +47,29 @@ const Index = () => {
               <div 
                 className={`w-[400px] h-[400px] rounded-full ${currentVariant.bg} flex items-center justify-center border-8 ${currentVariant.border} shadow-2xl transition-all duration-500 group-hover:scale-105 overflow-hidden relative`}
               >
-                <img 
-                  src="https://cdn.poehali.dev/files/3941cb72-f232-43c8-a875-c8cc2fbe0d89.png"
-                  alt="Сантехник"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full shadow-lg">
-                  <div className="text-sm font-montserrat font-black text-[#1A1F2C] tracking-tight">
-                    Д И
+                <div className="absolute inset-0 grid grid-cols-3">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 1"
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
+                      alt="Фото 2"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 3"
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                    />
                   </div>
                 </div>
               </div>
@@ -66,9 +81,9 @@ const Index = () => {
                     d="M 200, 200 m -180, 0 a 180,180 0 1,1 360,0 a 180,180 0 1,1 -360,0"
                   />
                 </defs>
-                <text className="fill-white font-rubik font-black text-[24px] tracking-[0.4em]" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 8px rgba(0,0,0,0.6)'}}>
-                  <textPath href="#circlePath" startOffset="25%">
-                    СЛЕСАРЬ · САНТЕХНИК
+                <text className="fill-white font-rubik font-black text-[28px] tracking-[0.4em]" style={{textShadow: '2px 2px 4px rgba(0,0,0,0.9), 0 0 8px rgba(0,0,0,0.7)'}}>
+                  <textPath href="#circlePath" startOffset="22%">
+                    ТАКСУЕМ В АБК
                   </textPath>
                 </text>
               </svg>
@@ -77,7 +92,7 @@ const Index = () => {
 
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <Card className="p-8 bg-white shadow-lg">
-              <h2 className="text-2xl font-montserrat font-bold mb-6 text-accent">
+              <h2 className="text-2xl font-montserrat font-bold mb-6 text-yellow-600">
                 Варианты логотипа
               </h2>
               <div className="space-y-3">
@@ -101,22 +116,22 @@ const Index = () => {
             </Card>
 
             <Card className="p-8 bg-white shadow-lg">
-              <h3 className="text-xl font-montserrat font-bold mb-4 text-accent flex items-center gap-2">
+              <h3 className="text-xl font-montserrat font-bold mb-4 text-yellow-600 flex items-center gap-2">
                 <Icon name="Palette" size={24} />
                 Цветовая палитра
               </h3>
               <div className="grid grid-cols-3 gap-3">
                 <div className="space-y-2">
-                  <div className="w-full h-16 rounded-lg bg-[#FF6B35] shadow-md hover:scale-105 transition-transform" />
-                  <p className="text-xs font-rubik text-center text-muted-foreground">#FF6B35</p>
+                  <div className="w-full h-16 rounded-lg bg-yellow-400 shadow-md hover:scale-105 transition-transform" />
+                  <p className="text-xs font-rubik text-center text-muted-foreground">#FACC15</p>
                 </div>
                 <div className="space-y-2">
-                  <div className="w-full h-16 rounded-lg bg-[#004E89] shadow-md hover:scale-105 transition-transform" />
-                  <p className="text-xs font-rubik text-center text-muted-foreground">#004E89</p>
+                  <div className="w-full h-16 rounded-lg bg-orange-500 shadow-md hover:scale-105 transition-transform" />
+                  <p className="text-xs font-rubik text-center text-muted-foreground">#F97316</p>
                 </div>
                 <div className="space-y-2">
-                  <div className="w-full h-16 rounded-lg bg-[#1A1F2C] shadow-md hover:scale-105 transition-transform" />
-                  <p className="text-xs font-rubik text-center text-muted-foreground">#1A1F2C</p>
+                  <div className="w-full h-16 rounded-lg bg-red-500 shadow-md hover:scale-105 transition-transform" />
+                  <p className="text-xs font-rubik text-center text-muted-foreground">#EF4444</p>
                 </div>
               </div>
             </Card>
@@ -124,29 +139,46 @@ const Index = () => {
         </div>
 
         <div className="text-center mb-6">
-          <h3 className="text-2xl font-montserrat font-bold text-accent mb-6">Примеры использования</h3>
+          <h3 className="text-2xl font-montserrat font-bold text-yellow-600 mb-6">Примеры использования</h3>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <Card className="p-8 bg-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             <div className="relative">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative">
-                <img 
-                  src="https://cdn.poehali.dev/files/3941cb72-f232-43c8-a875-c8cc2fbe0d89.png"
-                  alt="Сантехник"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2 py-0.5 rounded-full">
-                  <div className="text-xs font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute inset-0 grid grid-cols-3">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 1"
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
+                      alt="Фото 2"
+                      className="absolute inset-0 w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 3"
+                      className="absolute inset-0 w-full h-full object-cover"
+                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                    />
+                  </div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
                 <defs>
                   <path id="circle1" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
                 </defs>
-                <text className="fill-white font-rubik font-black text-[12px] tracking-[0.25em]" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.6)'}}>
-                  <textPath href="#circle1" startOffset="25%">
-                    СЛЕСАРЬ · САНТЕХНИК
+                <text className="fill-white font-rubik font-black text-[13px] tracking-[0.3em]" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.7)'}}>
+                  <textPath href="#circle1" startOffset="18%">
+                    ТАКСУЕМ В АБК
                   </textPath>
                 </text>
               </svg>
@@ -156,22 +188,39 @@ const Index = () => {
           <Card className="p-8 bg-gray-900 shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             <div className="relative">
               <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-lg relative">
-                <img 
-                  src="https://cdn.poehali.dev/files/3941cb72-f232-43c8-a875-c8cc2fbe0d89.png"
-                  alt="Сантехник"
-                  className="w-full h-full object-cover grayscale"
-                />
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/95 px-2 py-0.5 rounded-full">
-                  <div className="text-xs font-montserrat font-black text-[#1A1F2C]">Д И</div>
+                <div className="absolute inset-0 grid grid-cols-3">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 1"
+                      className="absolute inset-0 w-full h-full object-cover grayscale"
+                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
+                      alt="Фото 2"
+                      className="absolute inset-0 w-full h-full object-cover grayscale"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 3"
+                      className="absolute inset-0 w-full h-full object-cover grayscale"
+                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                    />
+                  </div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
                 <defs>
                   <path id="circle2" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
                 </defs>
-                <text className="fill-white font-rubik font-black text-[12px] tracking-[0.25em]" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.8), 0 0 6px rgba(0,0,0,0.6)'}}>
-                  <textPath href="#circle2" startOffset="25%">
-                    СЛЕСАРЬ · САНТЕХНИК
+                <text className="fill-white font-rubik font-black text-[13px] tracking-[0.3em]" style={{textShadow: '1px 1px 3px rgba(0,0,0,0.9), 0 0 6px rgba(0,0,0,0.7)'}}>
+                  <textPath href="#circle2" startOffset="18%">
+                    ТАКСУЕМ В АБК
                   </textPath>
                 </text>
               </svg>
@@ -180,23 +229,40 @@ const Index = () => {
 
           <Card className="p-8 bg-white shadow-xl hover:shadow-2xl transition-all hover:scale-105 flex items-center justify-center">
             <div className="relative">
-              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-[#FF6B35] shadow-lg relative bg-white">
-                <img 
-                  src="https://cdn.poehali.dev/files/3941cb72-f232-43c8-a875-c8cc2fbe0d89.png"
-                  alt="Сантехник"
-                  className="w-full h-full object-cover opacity-80"
-                />
-                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white px-2 py-0.5 rounded-full shadow-md">
-                  <div className="text-xs font-montserrat font-black text-[#1A1F2C]">Д И</div>
+              <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-500 shadow-lg relative bg-white">
+                <div className="absolute inset-0 grid grid-cols-3">
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 1"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90"
+                      style={{ clipPath: 'polygon(0 0, 100% 0, 50% 100%, 0% 100%)' }}
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/f8167791-236e-4669-ae5f-90b13d65b16f.png"
+                      alt="Фото 2"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90"
+                    />
+                  </div>
+                  <div className="relative overflow-hidden">
+                    <img 
+                      src="https://cdn.poehali.dev/files/996ab09b-96da-494a-9c42-8b51b0a35856.png"
+                      alt="Фото 3"
+                      className="absolute inset-0 w-full h-full object-cover opacity-90"
+                      style={{ clipPath: 'polygon(50% 0, 100% 0, 100% 100%, 0% 100%)' }}
+                    />
+                  </div>
                 </div>
               </div>
               <svg className="absolute inset-0 w-48 h-48 pointer-events-none" viewBox="0 0 192 192">
                 <defs>
                   <path id="circle3" d="M 96, 96 m -86, 0 a 86,86 0 1,1 172,0 a 86,86 0 1,1 -172,0" />
                 </defs>
-                <text className="fill-[#1A1F2C] font-rubik font-black text-[12px] tracking-[0.25em]" style={{textShadow: '0 0 3px white, 0 0 5px white'}}>
-                  <textPath href="#circle3" startOffset="25%">
-                    СЛЕСАРЬ · САНТЕХНИК
+                <text className="fill-black font-rubik font-black text-[13px] tracking-[0.3em]" style={{textShadow: '0 0 3px white, 0 0 5px white'}}>
+                  <textPath href="#circle3" startOffset="18%">
+                    ТАКСУЕМ В АБК
                   </textPath>
                 </text>
               </svg>
@@ -206,9 +272,9 @@ const Index = () => {
 
         <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '0.6s' }}>
           <div className="inline-flex items-center gap-3 bg-white px-6 py-3 rounded-full shadow-lg">
-            <Icon name="Wrench" size={20} className="text-primary" />
-            <span className="font-rubik font-medium text-accent">Круглый логотип готов</span>
-            <Icon name="Droplets" size={20} className="text-secondary" />
+            <Icon name="Car" size={20} className="text-yellow-500" />
+            <span className="font-rubik font-medium text-gray-800">Логотип такси готов</span>
+            <Icon name="Sparkles" size={20} className="text-orange-500" />
           </div>
         </div>
       </div>
